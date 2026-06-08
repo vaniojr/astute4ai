@@ -12,9 +12,7 @@ export function ContactCTA() {
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <Link
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contact.formAnchor}
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             Solicitar diagnóstico gratuito

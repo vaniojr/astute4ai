@@ -1,6 +1,6 @@
 export function ContactForm() {
   return (
-    <section className="px-4 py-20 sm:px-6 lg:px-8">
+    <section id="formulario-contato" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-4xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">Formulário rápido</p>
         <h2 className="mt-3 text-3xl font-semibold text-slate-950 sm:text-4xl">Conte seu projeto em poucos passos</h2>
@@ -8,7 +8,11 @@ export function ContactForm() {
           Preencha as informações abaixo para receber uma avaliação inicial da Astute4AI.
         </p>
 
-        <form className="mt-8 grid gap-5" action={`mailto:contato@astute4ai.com`} method="post" encType="text/plain">
+        <form className="mt-8 grid gap-5" action="https://formsubmit.co/contato@astute4ai.com" method="post">
+          <input type="hidden" name="_subject" value="Novo diagnóstico - Astute4AI" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
           <div className="grid gap-2">
             <label htmlFor="nome" className="text-sm font-medium text-slate-800">
               Nome

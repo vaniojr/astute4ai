@@ -28,9 +28,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Link
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contact.formAnchor}
             className="rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-5 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
             Solicitar diagnóstico gratuito
@@ -63,9 +61,7 @@ export function Header() {
               </a>
             ))}
             <Link
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contact.formAnchor}
               className="mt-2 inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-5 py-2 text-sm font-semibold text-white"
               onClick={() => setIsOpen(false)}
             >

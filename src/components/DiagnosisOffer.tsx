@@ -12,17 +12,13 @@ export function DiagnosisOffer() {
         </p>
         <div className="mt-7 flex flex-col gap-3 sm:flex-row">
           <Link
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contact.formAnchor}
             className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-700"
           >
             Solicitar diagnóstico gratuito
           </Link>
           <Link
-            href={contact.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={contact.formAnchor}
             className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-sky-400 hover:text-sky-700"
           >
             Avaliar minha ideia

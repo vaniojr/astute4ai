@@ -20,25 +20,19 @@ export function Hero() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contact.formAnchor}
               className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
             >
               Solicitar diagnóstico gratuito
             </Link>
             <Link
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contact.formAnchor}
               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-sky-400 hover:text-sky-700"
             >
               Avaliar minha ideia
             </Link>
             <Link
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contact.formAnchor}
               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-sky-400 hover:text-sky-700"
             >
               Quero criar meu SaaS
@@ -69,9 +63,7 @@ export function Hero() {
               <p className="text-sm text-slate-700">Transformamos ideias, processos e oportunidades em soluções digitais focadas em validação, receita e crescimento.</p>
             </div>
             <Link
-              href={contact.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={contact.formAnchor}
               className="mt-4 inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-slate-700"
             >
               Quero automatizar meu negócio

@@ -195,6 +195,6 @@ export const trustPoints = [
 ];
 
 export const contact = {
-  whatsapp: "https://wa.me/5500000000000",
+  formAnchor: "#formulario-contato",
   email: "contato@astute4ai.com",
 };
