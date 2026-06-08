@@ -1,21 +1,21 @@
 export const navItems = [
-  { label: "Inicio", href: "#inicio" },
+  { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
-  { label: "Solucoes", href: "#solucoes" },
+  { label: "Soluções", href: "#solucoes" },
   { label: "Projetos", href: "#projetos" },
   { label: "Processo", href: "#processo" },
   { label: "Contato", href: "#contato" },
 ];
 
-export const heroTags = ["IA", "SaaS", "Automacao", "Web Apps"];
+export const heroTags = ["MVP", "SaaS", "Automação", "IA aplicada"];
 
 export const solutions = [
   {
     title: "SaaS sob medida",
     description:
-      "Criamos plataformas SaaS para negocios que precisam transformar processos, servicos ou ideias em produtos digitais escalaveis.",
+      "Criamos plataformas SaaS para empresas e empreendedores que precisam transformar processos, serviços ou ideias em produtos digitais escaláveis.",
     examples: [
-      "Gestao de pedidos",
+      "Gestão de pedidos",
       "Plataformas de assinatura",
       "Dashboards",
       "Sistemas internos",
@@ -23,40 +23,40 @@ export const solutions = [
     ],
   },
   {
-    title: "Inteligencia Artificial aplicada",
+    title: "Inteligência Artificial aplicada",
     description:
-      "Integramos IA em fluxos reais de negocio para automatizar tarefas, melhorar decisoes e criar experiencias mais inteligentes para clientes e equipes.",
+      "Integramos IA em fluxos reais de negócio para automatizar tarefas, melhorar decisões e criar experiências mais inteligentes para clientes e equipes.",
     examples: [
       "Agentes de IA",
-      "Analises automatizadas",
+      "Análises automatizadas",
       "Assistentes virtuais",
-      "Recomendacoes inteligentes",
-      "Geracao de conteudo",
-      "Apoio a tomada de decisao",
+      "Recomendações inteligentes",
+      "Geração de conteúdo",
+      "Apoio à tomada de decisão",
     ],
   },
   {
-    title: "Aplicacoes web modernas",
+    title: "Aplicações web modernas",
     description:
-      "Desenvolvemos sites, sistemas e aplicacoes web modernas, responsivas e preparadas para performance, SEO e crescimento.",
+      "Desenvolvemos sites, sistemas e aplicações web modernas, responsivas e preparadas para performance, SEO e crescimento.",
     examples: [
       "Landing pages",
-      "Portais institucionais",
+      "Portais institucionais e comerciais",
       "Sistemas administrativos",
       "Web apps",
-      "Integracoes com APIs",
+      "Integrações com APIs",
     ],
   },
   {
-    title: "Automacao de processos",
+    title: "Automação de processos",
     description:
-      "Automatizamos tarefas repetitivas para reduzir tempo operacional, organizar dados e aumentar a produtividade do negocio.",
+      "Automatizamos tarefas repetitivas para reduzir tempo operacional, organizar dados e aumentar a produtividade do negócio.",
     examples: [
-      "Fluxos de atendimento",
-      "Integracoes entre ferramentas",
-      "Relatorios automaticos",
+      "Fluxos de atendimento e vendas",
+      "Integrações entre ferramentas",
+      "Relatórios automáticos",
       "Processamento de dados",
-      "Operacoes comerciais",
+      "Operações comerciais",
     ],
   },
 ];
@@ -65,45 +65,51 @@ export const projects = [
   {
     title: "Trip Astute4AI",
     href: "https://trip.astute4ai.com/",
-    category: "SaaS / Viagens / Inteligencia Artificial",
+    category: "SaaS / Viagens / Inteligência Artificial",
     description:
-      "Plataforma inteligente para planejamento de viagens, criada para ajudar usuarios a organizar roteiros, explorar destinos e transformar a experiencia de viagem com apoio de tecnologia e IA.",
+      "Plataforma inteligente para planejamento de viagens, criada para ajudar usuários a organizar roteiros, explorar destinos e transformar a experiência de viagem com apoio de tecnologia e IA.",
     highlights: [
       "Planejamento de viagens",
-      "Experiencia digital intuitiva",
+      "Experiência digital intuitiva",
       "Potencial de assinatura SaaS",
       "Foco em turismo inteligente",
     ],
+    demonstrates:
+      "Demonstra capacidade de criar produto SaaS com IA, experiência de usuário, planos de assinatura e foco em turismo inteligente.",
     cta: "Conhecer projeto",
   },
   {
     title: "Pedidos Astute4AI",
     href: "https://pedidos.astute4ai.com/",
-    category: "SaaS / Pedidos Online / Negocios locais",
+    category: "SaaS / Pedidos Online / Negócios locais",
     description:
-      "Solucao de pedidos online pensada para restaurantes, hamburguerias e negocios locais que desejam vender diretamente pelo proprio canal, reduzindo dependencia de marketplaces.",
+      "Solução de pedidos online pensada para restaurantes, hamburguerias e negócios locais que desejam vender diretamente pelo próprio canal, reduzindo dependência de marketplaces.",
     highlights: [
-      "Cardapio digital",
+      "Cardápio digital",
       "Pedidos online",
-      "Solucao para restaurantes e lanchonetes",
+      "Solução para restaurantes e lanchonetes",
       "Possibilidade de modelo SaaS multiempresas",
-      "Alternativa propria a plataformas de delivery",
+      "Alternativa própria a plataformas de delivery",
     ],
-    cta: "Ver solucao",
+    demonstrates:
+      "Demonstra capacidade de criar solução SaaS para negócios locais, com cardápio digital, painel de pedidos e potencial multiempresas.",
+    cta: "Ver solução",
   },
   {
     title: "World Cup Astute4AI",
     href: "https://world-cup.astute4ai.com/",
-    category: "Aplicacao web / Esportes / Dados",
+    category: "Aplicação web / Esportes / Dados",
     description:
-      "Aplicacao interativa voltada para a Copa do Mundo, com organizacao de jogos, fases, grupos, selecoes e recursos para analise e palpites de partidas.",
+      "Aplicação interativa voltada para a Copa do Mundo, com organização de jogos, fases, grupos, seleções e recursos para análise e palpites de partidas.",
     highlights: [
       "Interface interativa",
-      "Organizacao por fases e grupos",
-      "Visual com bandeiras dos paises",
-      "Consulta e analise de partidas",
-      "Experiencia esportiva digital",
+      "Organização por fases e grupos",
+      "Visual com bandeiras dos países",
+      "Consulta e análise de partidas",
+      "Experiência esportiva digital",
     ],
+    demonstrates:
+      "Demonstra capacidade de criar aplicação interativa com dados, eventos esportivos, organização visual e análise automatizada.",
     cta: "Acessar app",
   },
 ];
@@ -112,61 +118,80 @@ export const processSteps = [
   {
     title: "Entendimento",
     description:
-      "Mapeamos a ideia, o problema de negocio, o publico-alvo e os objetivos principais da solucao.",
+      "Mapeamos a ideia, o problema de negócio, o público-alvo e os objetivos principais da solução.",
   },
   {
-    title: "Estrategia",
+    title: "Estratégia",
     description:
-      "Definimos escopo, funcionalidades prioritarias, modelo de produto e melhor caminho para validar a solucao.",
+      "Definimos escopo, funcionalidades prioritárias, modelo de produto e melhor caminho para validar a solução.",
   },
   {
     title: "Desenvolvimento",
     description:
-      "Criamos a aplicacao com tecnologias modernas, foco em usabilidade, performance e possibilidade de evolucao.",
+      "Criamos a aplicação com tecnologias modernas, foco em usabilidade, performance e possibilidade de evolução.",
   },
   {
-    title: "Evolucao",
+    title: "Evolução",
     description:
-      "Apos o lancamento, o projeto pode evoluir com novas funcionalidades, automacoes, IA, integracoes e melhorias continuas.",
+      "Após o lançamento, o projeto pode evoluir com novas funcionalidades, automações, IA, integrações e melhorias contínuas.",
   },
 ];
 
 export const audience = [
   "Empreendedores com uma ideia de SaaS",
-  "Negocios locais que querem vender online",
+  "Negócios locais que querem vender online",
   "Empresas que precisam automatizar processos",
   "Startups em fase de MVP",
   "Profissionais que querem transformar conhecimento em produto digital",
-  "Restaurantes, clinicas, consultorias, escolas, prestadores de servico e empresas B2B",
-  "Projetos que precisam de IA aplicada de forma pratica",
+  "Restaurantes, clínicas, consultorias, escolas, prestadores de serviço e empresas B2B",
+  "Projetos que precisam de IA aplicada de forma prática",
 ];
 
 export const differentials = [
   {
     title: "Foco em produto real",
     description:
-      "Nao criamos apenas telas bonitas. Criamos solucoes pensadas para funcionar, vender e evoluir.",
+      "Não criamos apenas telas bonitas. Criamos soluções pensadas para funcionar, vender e evoluir.",
   },
   {
-    title: "IA com proposito",
+    title: "IA com propósito",
     description:
-      "Aplicamos inteligencia artificial onde ela realmente gera valor: automacao, analise, personalizacao e eficiencia.",
+      "Aplicamos inteligência artificial onde ela realmente gera valor: automação, análise, personalização e eficiência.",
   },
   {
-    title: "Visao de negocio",
+    title: "Visão de negócio",
     description:
-      "Cada projeto e pensado considerando publico, operacao, monetizacao e potencial de crescimento.",
+      "Cada projeto é pensado considerando público, operação, monetização e potencial de crescimento.",
   },
   {
-    title: "Desenvolvimento agil",
+    title: "Desenvolvimento ágil",
     description:
-      "Priorizamos MVPs funcionais, validacao rapida e evolucao continua.",
+      "Priorizamos MVPs funcionais, validação rápida e evolução contínua.",
   },
   {
-    title: "Solucoes escalaveis",
+    title: "Soluções escaláveis",
     description:
-      "Projetos preparados para crescer com novas funcionalidades, integracoes e modelos de receita.",
+      "Projetos preparados para crescer com novas funcionalidades, integrações e modelos de receita.",
   },
+];
+
+export const projectTypes = [
+  "SaaS para novos negócios",
+  "Sistemas internos para empresas",
+  "Cardápios e pedidos online",
+  "Automações com IA",
+  "Landing pages comerciais",
+  "Dashboards e painéis de gestão",
+  "Agentes de IA e assistentes virtuais",
+  "MVPs para validação de mercado",
+];
+
+export const trustPoints = [
+  "Projetos próprios já publicados em produção",
+  "Visão de produto, não apenas desenvolvimento",
+  "Uso prático de IA aplicado a problemas reais",
+  "Foco em MVP, validação e evolução contínua",
+  "Soluções pensadas para venda, operação e escala",
 ];
 
 export const contact = {

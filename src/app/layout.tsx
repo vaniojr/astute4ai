@@ -13,25 +13,25 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Astute4AI | Solucoes digitais com IA, SaaS e automacao",
+  title: "Astute4AI | MVPs, SaaS, automações e soluções digitais com IA",
   description:
-    "A Astute4AI desenvolve plataformas web, SaaS, automacoes e solucoes com inteligencia artificial para empresas, empreendedores e negocios em crescimento.",
+    "A Astute4AI transforma ideias, processos e oportunidades em produtos digitais, MVPs, SaaS, automações e aplicações web com inteligência artificial.",
   keywords: [
     "Astute4AI",
-    "inteligencia artificial para negocios",
+    "inteligência artificial para negócios",
     "desenvolvimento SaaS",
-    "automacao empresarial",
-    "aplicacoes web",
+    "automação empresarial",
+    "aplicações web",
     "sistemas sob medida",
     "agentes de IA",
-    "transformacao digital",
+    "transformação digital",
     "MVP para startups",
     "tecnologia para empresas",
   ],
   openGraph: {
-    title: "Astute4AI | Solucoes digitais inteligentes",
+    title: "Astute4AI | MVPs, SaaS, automações e soluções digitais com IA",
     description:
-      "Transformamos ideias, processos e oportunidades em produtos digitais com IA, SaaS e automacao.",
+      "A Astute4AI transforma ideias, processos e oportunidades em produtos digitais, MVPs, SaaS, automações e aplicações web com inteligência artificial.",
     type: "website",
     locale: "pt_BR",
     url: "https://astute4ai.com",
@@ -49,7 +49,7 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${sora.variable} ${spaceGrotesk.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-slate-950 text-slate-100">{children}</body>
+      <body className="min-h-full bg-slate-50 text-slate-900">{children}</body>
     </html>
   );
 }
