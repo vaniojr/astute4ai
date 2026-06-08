@@ -1,6 +1,7 @@
 import { About } from "@/components/About";
 import { Audience } from "@/components/Audience";
 import { ContactCTA } from "@/components/ContactCTA";
+import { ContactForm } from "@/components/ContactForm";
 import { DiagnosisOffer } from "@/components/DiagnosisOffer";
 import { Differentials } from "@/components/Differentials";
 import { Footer } from "@/components/Footer";
@@ -22,14 +23,15 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <DiagnosisOffer />
         <Solutions />
+        <DiagnosisOffer />
         <ProjectTypes />
         <Projects />
         <Trust />
         <Process />
         <Audience />
         <Differentials />
+        <ContactForm />
         <ContactCTA />
       </main>
       <Footer />

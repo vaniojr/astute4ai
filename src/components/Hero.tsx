@@ -13,10 +13,10 @@ export function Hero() {
             MVPs, SaaS e IA para negócios
           </span>
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">
-            Transforme sua ideia em um produto digital com IA, SaaS ou automação.
+            Transformamos ideias em MVPs, SaaS e automações com IA.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg">
-            A Astute4AI cria MVPs, plataformas web e soluções inteligentes para empreendedores e empresas que querem validar, vender e escalar com tecnologia.
+            A Astute4AI cria produtos digitais, aplicações web e soluções inteligentes para empresas e empreendedores que querem validar, vender e escalar com tecnologia.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <Link
@@ -25,7 +25,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
             >
-              Solicitar diagnóstico
+              Solicitar diagnóstico gratuito
             </Link>
             <Link
               href={contact.whatsapp}
@@ -33,7 +33,15 @@ export function Hero() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-sky-400 hover:text-sky-700"
             >
-              Tenho uma ideia de projeto
+              Avaliar minha ideia
+            </Link>
+            <Link
+              href={contact.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition-colors hover:border-sky-400 hover:text-sky-700"
+            >
+              Quero criar meu SaaS
             </Link>
             <a
               href="#projetos"

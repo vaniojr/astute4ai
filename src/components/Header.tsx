@@ -33,7 +33,7 @@ export function Header() {
             rel="noopener noreferrer"
             className="rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-5 py-2 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
-            Solicitar diagnóstico
+            Solicitar diagnóstico gratuito
           </Link>
         </div>
 
@@ -69,7 +69,7 @@ export function Header() {
               className="mt-2 inline-flex justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-5 py-2 text-sm font-semibold text-white"
               onClick={() => setIsOpen(false)}
             >
-              Solicitar diagnóstico
+              Solicitar diagnóstico gratuito
             </Link>
           </nav>
         </div>

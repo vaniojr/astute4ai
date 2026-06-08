@@ -63,7 +63,7 @@ export const solutions = [
 
 export const projects = [
   {
-    title: "Trip Astute4AI",
+    title: "Trip",
     href: "https://trip.astute4ai.com/",
     category: "SaaS / Viagens / Inteligência Artificial",
     description:
@@ -79,7 +79,7 @@ export const projects = [
     cta: "Conhecer projeto",
   },
   {
-    title: "Pedidos Astute4AI",
+    title: "Pedido",
     href: "https://pedidos.astute4ai.com/",
     category: "SaaS / Pedidos Online / Negócios locais",
     description:
@@ -92,20 +92,20 @@ export const projects = [
       "Alternativa própria a plataformas de delivery",
     ],
     demonstrates:
-      "Demonstra capacidade de criar solução SaaS para negócios locais, com cardápio digital, painel de pedidos e potencial multiempresas.",
+      "Demonstra capacidade de criar solução SaaS para negócios locais, com cardápio digital, fluxo de pedidos e potencial multiempresas.",
     cta: "Ver solução",
   },
   {
-    title: "World Cup Astute4AI",
+    title: "World Cup",
     href: "https://world-cup.astute4ai.com/",
-    category: "Aplicação web / Esportes / Dados",
+    category: "Aplicação web / Esportes / IA preditiva",
     description:
-      "Aplicação interativa voltada para a Copa do Mundo, com organização de jogos, fases, grupos, seleções e recursos para análise e palpites de partidas.",
+      "Aplicação interativa para a Copa do Mundo com IA para auxiliar na predição de placares, consultas inteligentes e atualizadas sobre seleções e jogos.",
     highlights: [
-      "Interface interativa",
+      "Predição de placares com IA",
+      "Consulta inteligente e atualizada dos times",
       "Organização por fases e grupos",
-      "Visual com bandeiras dos países",
-      "Consulta e análise de partidas",
+      "Análise automatizada de partidas",
       "Experiência esportiva digital",
     ],
     demonstrates:

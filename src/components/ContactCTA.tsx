@@ -17,7 +17,7 @@ export function ContactCTA() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-500 to-indigo-500 px-6 py-3 text-sm font-semibold text-white transition-transform hover:-translate-y-0.5"
           >
-            Solicitar diagnóstico
+            Solicitar diagnóstico gratuito
           </Link>
           <a
             href="#projetos"
