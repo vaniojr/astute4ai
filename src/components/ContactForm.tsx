@@ -1,4 +1,34 @@
+"use client";
+
+import type { FormEvent } from "react";
+
 export function ContactForm() {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.currentTarget);
+    const nome = String(formData.get("nome") ?? "").trim();
+    const whatsapp = String(formData.get("whatsapp") ?? "").trim();
+    const tipo = String(formData.get("tipo") ?? "").trim();
+    const descricao = String(formData.get("descricao") ?? "").trim();
+    const estagio = String(formData.get("estagio") ?? "").trim();
+
+    const subject = encodeURIComponent("Novo diagnóstico - Astute4AI");
+    const body = encodeURIComponent(
+      [
+        `Nome: ${nome}`,
+        `WhatsApp: ${whatsapp}`,
+        `Tipo de projeto: ${tipo}`,
+        `Estágio atual do projeto: ${estagio}`,
+        "",
+        "Descrição da ideia:",
+        descricao,
+      ].join("\n"),
+    );
+
+    window.location.href = `mailto:contato@astute4ai.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section id="formulario-contato" className="px-4 py-20 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-4xl rounded-3xl border border-slate-200 bg-white p-8 shadow-xl sm:p-10">
@@ -8,11 +38,11 @@ export function ContactForm() {
           Preencha as informações abaixo para receber uma avaliação inicial da Astute4AI.
         </p>
 
-        <form className="mt-8 grid gap-5" action="https://formsubmit.co/contato@astute4ai.com" method="post">
-          <input type="hidden" name="_subject" value="Novo diagnóstico - Astute4AI" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
+        <p className="mt-2 text-xs text-slate-500">
+          Ao enviar, seu aplicativo de e-mail será aberto com os dados preenchidos para contato@astute4ai.com.
+        </p>
 
+        <form className="mt-8 grid gap-5" onSubmit={handleSubmit}>
           <div className="grid gap-2">
             <label htmlFor="nome" className="text-sm font-medium text-slate-800">
               Nome
