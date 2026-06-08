@@ -1,10 +1,17 @@
 "use client";
 
-import type { FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 
 export function ContactForm() {
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setFeedback(null);
 
     const formData = new FormData(event.currentTarget);
     const nome = String(formData.get("nome") ?? "").trim();
@@ -13,20 +20,46 @@ export function ContactForm() {
     const descricao = String(formData.get("descricao") ?? "").trim();
     const estagio = String(formData.get("estagio") ?? "").trim();
 
-    const subject = encodeURIComponent("Novo diagnóstico - Astute4AI");
-    const body = encodeURIComponent(
-      [
-        `Nome: ${nome}`,
-        `WhatsApp: ${whatsapp}`,
-        `Tipo de projeto: ${tipo}`,
-        `Estágio atual do projeto: ${estagio}`,
-        "",
-        "Descrição da ideia:",
-        descricao,
-      ].join("\n"),
-    );
+    setIsSubmitting(true);
 
-    window.location.href = `mailto:contato@astute4ai.com?subject=${subject}&body=${body}`;
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nome,
+          whatsapp,
+          tipo,
+          descricao,
+          estagio,
+        }),
+      });
+
+      if (!response.ok) {
+        const data = (await response.json()) as { message?: string };
+        throw new Error(data.message ?? "Falha ao enviar o formulário.");
+      }
+
+      setFeedback({
+        type: "success",
+        message:
+          "Recebemos sua solicitação com sucesso. Em breve entraremos em contato.",
+      });
+      event.currentTarget.reset();
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Não foi possível enviar seu formulário agora.";
+      setFeedback({
+        type: "error",
+        message,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -38,9 +71,7 @@ export function ContactForm() {
           Preencha as informações abaixo para receber uma avaliação inicial da Astute4AI.
         </p>
 
-        <p className="mt-2 text-xs text-slate-500">
-          Ao enviar, seu aplicativo de e-mail será aberto com os dados preenchidos para contato@astute4ai.com.
-        </p>
+        <p className="mt-2 text-xs text-slate-500">Seu envio será processado de forma segura pelo servidor da aplicação.</p>
 
         <form className="mt-8 grid gap-5" onSubmit={handleSubmit}>
           <div className="grid gap-2">
@@ -131,10 +162,22 @@ export function ContactForm() {
 
           <button
             type="submit"
+            disabled={isSubmitting}
             className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-slate-700"
           >
-            Solicitar diagnóstico gratuito
+            {isSubmitting ? "Enviando..." : "Solicitar diagnóstico gratuito"}
           </button>
+
+          {feedback ? (
+            <p
+              className={`text-sm ${
+                feedback.type === "success" ? "text-emerald-700" : "text-red-700"
+              }`}
+              role="status"
+            >
+              {feedback.message}
+            </p>
+          ) : null}
         </form>
       </div>
     </section>
